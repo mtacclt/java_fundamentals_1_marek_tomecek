@@ -21,15 +21,15 @@ public class Book {
     private String bname;
     private int price;
 
-    public Book (int bno,String bname,int price){
+    public Book(int bno, String bname, int price) {
         this.price = price;
         this.bno = bno;
         this.bname = bname;
     }
 
-    public void  display(){
-        System.out.println("bno: "+bno);
-        System.out.println("bname: "+bname);
-        System.out.println("price: "+price);
+    public void display() {
+        System.out.println("bno: " + bno);
+        System.out.println("bname: " + bname);
+        System.out.println("price: " + price);
     }
 }

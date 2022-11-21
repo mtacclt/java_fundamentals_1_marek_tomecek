@@ -1,18 +1,18 @@
 package call_by_value_or_call_by_reference;
 
 public class CallByValueTest {
-    int data=50;
+    int data = 50;
 
-    void change(int data){
-        data=data+100;
+    void change(int data) {
+        data = data + 100;
     }
 
-    public static void main(String[] args){
-        CallByValueTest op=new CallByValueTest();
+    public static void main(String[] args) {
+        CallByValueTest op = new CallByValueTest();
 
-        System.out.println("before change "+op.data);
+        System.out.println("before change " + op.data);
         op.change(500);
-        System.out.println("after change "+op.data);
+        System.out.println("after change " + op.data);
 
     }
 

@@ -15,23 +15,23 @@ and override the same display() of Book class in SpecialEditionBook which displa
 
 bno,bname,price using super.display() and display the value of discount.
  */
-public class SpecialEditionBook extends Book{
+public class SpecialEditionBook extends Book {
     private int bno;
     private String bname;
     private int price;
     private int discount;
 
     public SpecialEditionBook(int bno, String bname, int price) {
-        super(bno,bname,price);
+        super(bno, bname, price);
     }
 
-    public SpecialEditionBook(int bno, String bname, int price,int discount) {
-        super(bno,bname,price);
+    public SpecialEditionBook(int bno, String bname, int price, int discount) {
+        super(bno, bname, price);
         this.discount = discount;
     }
 
-    public void display(){
+    public void display() {
         super.display();
-        System.out.println("discount: "+discount);
+        System.out.println("discount: " + discount);
     }
 }

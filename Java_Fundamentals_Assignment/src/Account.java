@@ -17,29 +17,29 @@ public class Account {
     private int accountBalance;
     private String accountType;
 
-    public Account(int accountNo,int accountBalance,String accountType){
-        this.accountNo=accountNo;
-        this.accountBalance=accountBalance;
-        this.accountType=accountType;
+    public Account(int accountNo, int accountBalance, String accountType) {
+        this.accountNo = accountNo;
+        this.accountBalance = accountBalance;
+        this.accountType = accountType;
     }
 
-    public void setAccountDetails(int accountNo,int accountBalance,String accountType){
-        this.accountNo=accountNo;
-        this.accountBalance=accountBalance;
-        this.accountType=accountType;
+    public void setAccountDetails(int accountNo, int accountBalance, String accountType) {
+        this.accountNo = accountNo;
+        this.accountBalance = accountBalance;
+        this.accountType = accountType;
     }
 
-    public void withdraw(int amount){
+    public void withdraw(int amount) {
         accountBalance = accountBalance - amount;
     }
 
-    public void deposit(int amount){
+    public void deposit(int amount) {
         accountBalance = accountBalance + amount;
     }
 
-    public void dispAccountDetails(){
-        System.out.println("Account type is: "+accountType);
-        System.out.println("Account number is: "+accountNo);
-        System.out.println("Account balance is: "+accountBalance);
+    public void dispAccountDetails() {
+        System.out.println("Account type is: " + accountType);
+        System.out.println("Account number is: " + accountNo);
+        System.out.println("Account balance is: " + accountBalance);
     }
 }
